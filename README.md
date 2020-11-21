@@ -9,4 +9,4 @@ This project will analyze the polarization of Congress according to roll-call vo
 Identifying trends in polarization over time and polarization of topics may provide insight into the causal factors of polarization and how to best treat them.
 
 # License
-This project is under an [MIT License](./LICENSE.md)
+This project is under an [MIT License](./LICENSE)
