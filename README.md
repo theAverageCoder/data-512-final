@@ -1,12 +1,7 @@
 # Data 512 Final Project: Measuring political polarization in United States Congressional roll-call votes over the last 2000-2020
 
-# Goal
-This project will analyze the polarization of Congress according to roll-call vote data from 2000-2020. The two goals will be:
-   
-   1. Identification of trends over time in polarization.
-   2. Identification of correlation between topics and polarization
-   
-Identifying trends in polarization over time and polarization of topics may provide insight into the causal factors of polarization and how to best treat them.
+# Abstract
+Has political polarization spread into the U.S. legislative process? News articles have suggsted that increaseed political polarization could have far-reaching consequences on people's everyday lives on everything from their personal interactions to their physical health ([source](https://greatergood.berkeley.edu/article/item/what_is_the_true_cost_of_polarization_in_america)). While polarization's impact on the legislative process has been cited in articles, such as the [ping-poing effect on energy regulation](https://www.spglobal.com/platts/en/market-insights/latest-news/coal/102320-us-elections-political-polarization-creating-regulatory-ping-pong-effect-for-us-energy), few articles have cited a measurement to evaluate the polarization of the legislative process <i>directly</i>. To address this, this notebook attempts to measure political polarization of both chambers of Congress through the results of their roll-call votes.
 
 # Data
 We will use the open-sourced [congress GitHub](https://github.com/unitedstates/congress) set of scrapers to download Congressional roll-call vote data from 2000-2020. More specifically, we'll utilize the [votes data](https://github.com/unitedstates/congress/wiki/votes) which contains data on Congress roll-call votes.
