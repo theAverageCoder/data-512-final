@@ -4,6 +4,24 @@
 Has political polarization spread into the U.S. legislative process? News articles have suggsted that increaseed political polarization could have far-reaching consequences on people's everyday lives on everything from their personal interactions to their physical health ([source](https://greatergood.berkeley.edu/article/item/what_is_the_true_cost_of_polarization_in_america)). While polarization's impact on the legislative process has been cited in articles, such as the [ping-poing effect on energy regulation](https://www.spglobal.com/platts/en/market-insights/latest-news/coal/102320-us-elections-political-polarization-creating-regulatory-ping-pong-effect-for-us-energy), few articles have cited a measurement to evaluate the polarization of the legislative process <i>directly</i>. To address this, this notebook attempts to measure political polarization of both chambers of Congress through the results of their roll-call votes.
 
 # Data
+## Cached data
+You can run the notebook using the cached dataset from "full.csv"
+
+## Steps to get data from the source if you do not want to use the cached dataset
+The dataset is large, a copy is kept in a zip folder [data/data.zip](data/data.zip) for ease of reproducability.
+
+To reproduce the steps to get the original data:
+  1. Navigate to a folder where you want to clone the github repo.
+  2. Run: git clone "https://github.com/unitedstates/congress.git"
+  3. Follow the [setting up instructions](https://github.com/unitedstates/congress.git).
+  4. Copy [code/scripts/get_votes.ps1] to the root folder of the congress directory on your computer.
+  5. Run get_votes.ps1
+  6. Copy the data folder with the output into the data folder of this repository.
+  7. Run the [Report for Congressional Polarization-Copy.ipynb](./Report\ for\ Congressional\ Polarization-Copy.ipynb)
+  
+**Note:** this may take anywhere bewteeen 5 hours to a few days depending on your internet connection.
+
+## Data schema
 We will use the open-sourced [congress GitHub](https://github.com/unitedstates/congress) set of scrapers to download Congressional roll-call vote data from 2000-2020. More specifically, we'll utilize the [votes data](https://github.com/unitedstates/congress/wiki/votes) which contains data on Congress roll-call votes.
 
 From the project:
