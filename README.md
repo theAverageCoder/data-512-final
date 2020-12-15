@@ -14,13 +14,14 @@ To reproduce the steps to get the original data:
   1. Navigate to a folder where you want to clone the github repo.
   2. Run: git clone "https://github.com/unitedstates/congress.git"
   3. Follow the [setting up instructions](https://github.com/unitedstates/congress.git).
-  4. Copy [code/scripts/get_votes.ps1] to the root folder of the congress directory on your computer.
+  4. Copy [code/scripts/get_votes.ps1](code/scripts/get_votes.ps1) to the root folder of the congress directory on your computer.
   5. Run get_votes.ps1
   6. Copy the data folder with the output into the data folder of this repository.
-  7. Run the [Report for Congressional Polarization-Copy.ipynb](./Report\ for\ Congressional\ Polarization-Copy.ipynb)
+  7. Run the [Report for Congressional Polarization-Copy.ipynb](./Report_for_Congressional_Polarization.ipynb)
   
 **Note:** this may take anywhere bewteeen 5 hours to a few days depending on your internet connection.
-**Note 2:** For how to validate, please reference the Appendix section of [Report for Congressional Polarization-Copy.ipynb](./Report\ for\ Congressional\ Polarization-Copy.ipynb).
+
+**Note 2:** For how to validate, please reference the Appendix section of [Report for Congressional Polarization-Copy.ipynb](./Report_for_Congressional_Polarization.ipynb).
 
 ## Data schema
 We will use the open-sourced [congress GitHub](https://github.com/unitedstates/congress) set of scrapers to download Congressional roll-call vote data from 2000-2020. More specifically, we'll utilize the [votes data](https://github.com/unitedstates/congress/wiki/votes) which contains data on Congress roll-call votes.
