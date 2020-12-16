@@ -1,4 +1,5 @@
 # Data 512 Final Project: Measuring political polarization in United States Congressional roll-call votes over the last 2000-2020
+**Note** Rendering for  [Report_for_Congressional_Polarization.ipynb](./Report_for_Congressional_Polarization.ipynb) may not work well in GitHub, for best viewing experience please clone the repository and use Jupyter Notebook locally.
 
 # Abstract
 Has political polarization spread into the U.S. legislative process? News articles have suggsted that increaseed political polarization could have far-reaching consequences on people's everyday lives on everything from their personal interactions to their physical health ([source](https://greatergood.berkeley.edu/article/item/what_is_the_true_cost_of_polarization_in_america)). While polarization's impact on the legislative process has been cited in articles, such as the [ping-poing effect on energy regulation](https://www.spglobal.com/platts/en/market-insights/latest-news/coal/102320-us-elections-political-polarization-creating-regulatory-ping-pong-effect-for-us-energy), few articles have cited a measurement to evaluate the polarization of the legislative process <i>directly</i>. To address this, this notebook attempts to measure political polarization of both chambers of Congress through the results of their roll-call votes.
@@ -12,6 +13,18 @@ The main files for this project are the following:
 | [full.csv](data/full.csv) | The full cached dataset used in the report to run the analysis. |
 | [get_votes.ps1](code/scripts/get_votes.ps1) | The PowerShell script which was used to pull the data from the source APIs. |
 
+# How to run the notebook
+You will need a computer with access to the internet in order to download the software required for this notebook.
+
+  1. Install [conda](https://docs.anaconda.com/anaconda/install/)
+  2. Open an Anaconda command prompt
+  3. Run 
+    conda env create -f congress_polarization.yml
+  4. Run the following to activate the anaconda environment:
+    conda activate congress_polarization
+  5. Launch jupyter notebook:
+    jupyter notebook
+  6. Click on Report_for_Congressional_Polarization.ipynb
 # Data
 ## Cached data
 You can run the notebook using the cached dataset from "full.csv"
@@ -67,18 +80,7 @@ The dataset schema is similar to what follows (maybe updated depending on whethe
 | party | "D" for Democrat, "R" for Republican | "R" |
 | state | Two-letter state abbreviation of the state that the congressperson represents | "NC"
 
-# How to run the notebook
-You will need a computer with access to the internet in order to download the software required for this notebook.
 
-  1. Install [conda](https://docs.anaconda.com/anaconda/install/)
-  2. Open an Anaconda command prompt
-  3. Run 
-    conda env create -f congress_polarization.yml
-  4. Run the following to activate the anaconda environment:
-    conda activate congress_polarization
-  5. Launch jupyter notebook:
-    jupyter notebook
-  6. Click on Report_for_Congressional_Polarization.ipynb
 
 # Dependencies used
 Here's a list of Python libraries which are used by the notebook:
