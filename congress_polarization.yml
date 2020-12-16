@@ -1,0 +1,6 @@
+name: congress_polarization
+channels:
+  - conda-forge
+  - defaults
+prefix: C:\ProgramData\Anaconda3\envs\congress_polarization
+
