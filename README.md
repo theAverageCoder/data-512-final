@@ -16,8 +16,10 @@ The main files for this project are the following:
 ## Cached data
 You can run the notebook using the cached dataset from "full.csv"
 
-## Steps to get data from the source if you do not want to use the cached dataset
-The original dataset is larged, the processed dataset is kept cached in [data/full.csv](data/full.csv) for ease of reproducability.
+## How to get the raw data, if you do not wish to use the cached dataset
+The original dataset is large, the processed dataset is kept cached in [data/full.csv](data/full.csv) for ease of reproducability.
+
+**WARNING**: in order to make the notebook, [Report_for_Congressional_Polarization.ipynb](./Report_for_Congressional_Polarization.ipynb), use the fresh data in the code as-is you must delete [data/full.csv](data/full.csv) -- if you do not wish to do this please modify the code!
 
 To reproduce the steps to get the original data:
   1. Navigate to a folder where you want to clone the github repo.
@@ -64,6 +66,27 @@ The dataset schema is similar to what follows (maybe updated depending on whethe
 | display_name | Congress person's display name | "John Jay" |
 | party | "D" for Democrat, "R" for Republican | "R" |
 | state | Two-letter state abbreviation of the state that the congressperson represents | "NC"
+
+# How to run the notebook
+You will need a computer with access to the internet in order to download the software required for this notebook.
+
+  1. Install [conda](https://docs.anaconda.com/anaconda/install/)
+  2. Open an Anaconda command prompt
+  3. Run 
+    conda env create -f congress_polarization.yml
+  4. Run the following to activate the anaconda environment:
+    conda activate congress_polarization
+  5. Launch jupyter notebook:
+    jupyter notebook
+  6. Click on Report_for_Congressional_Polarization.ipynb
+
+# Dependencies used
+Here's a list of Python libraries which are used by the notebook:
+
+  1. matplotlib
+  2. seaborn
+  3. pandas
+  4. numpy
 
 # License
 This project is under an [MIT License](./LICENSE)
