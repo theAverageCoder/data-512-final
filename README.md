@@ -32,54 +32,7 @@ To reproduce the steps to get the original data:
   
 **Note:** this may take anywhere bewteeen 5 hours to a few days depending on your internet connection.
 
-### Data quality validation
-#### Results of the data quality validation
-For the dataset in this analysis the years between 2003-2020 differed by fewer than 2% from the vote counts recorded on the website shared above in "Steps to validate data quality". 
-
-#### Steps to validate data quality
-Since the dataset is large and the process to get it is long-running we neded a manner to validate the data quality prior to running our analalysis. We performed the following steps to verify data quality from the long-running download task in "Manual steps to get the dataset":
-
-   1. Navigate to https://www.govtrack.us/congress/votes
-   2. Find the "Filter Votes" box and select the year whose vote count you want to verify, as shown below:
-   <br/>*Screenshot of the "Filter Votes" box December 6, 2020*
-   
-   ![Screenshot of the "Filter Votes" box December 6, 2020](pictures/data-verification/filter-votes.png "Filter Votes button")
-   
-   <br/>
-   
-   *Screenshot of the "Filter Votes" year selection December 6, 2020*
-   
-   ![Screenshot of the expanded "Filter Votes" selection box December 6, 2020](pictures/data-verification/filter-votes-expanded-select.png "Filter Votes year selection")
-   3. Wait for the page to load, and then take note of the count of votes displayed on the screen, as highlighted, circled and arrowed in the below screenshot.
-   <br/>*Screenshot of the vote count (1,035) December 6, 2020*
-   ![Screenshot of the vote count December 6, 2020](pictures/data-verification/vote-count.png "Vote count on the screen")
-   4. Compare the vote count (e.g., 1,035 in the screenshot above) with the total votes in your downloaded dataset.
-   
-For convenience, here are the results of carrying out these steps for the years 2003-2020 as of December 6th, 2020 (i.e.: 2020 is incomplete):
-
-*Table: the count of votes in Congress by year according to https://www.govtrack.us/congress/votes*
-<br />
-
-| Year | Vote count |
-| ---- | ---- |
-| 2020 | 488 |
-| 2019 | 1129 |
-| 2018 | 774 |
-| 2017 | 1035 |
-| 2016 | 784 |
-| 2015 | 1043 |
-| 2014 | 929 |
-| 2013 | 932 |
-| 2012 | 909 |
-| 2011 | 1183 |
-| 2010 | 963 |
-| 2009 | 1388 |
-| 2008 | 905 |
-| 2007 | 1628 |
-| 2006 | 822 |
-| 2005 | 1037 |
-| 2004 | 760 |
-| 2003 | 1136 |
+**Note 2:** For data quality validation reference the Appendix of [Report_for_Congressional_Polarization.ipynb](./Report_for_Congressional_Polarization.ipynb).
 
 ## Data schema
 We will use the open-sourced [congress GitHub](https://github.com/unitedstates/congress) set of scrapers to download Congressional roll-call vote data from 2000-2020. More specifically, we'll utilize the [votes data](https://github.com/unitedstates/congress/wiki/votes) which contains data on Congress roll-call votes.
